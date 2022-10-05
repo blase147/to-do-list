@@ -1,0 +1,74 @@
+body {
+  /* background-color: red; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+#todoContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid grey;
+
+  /* justify-content: space-around; */
+  gap: 100px;
+  align-items: center;
+  align-content: flex-start;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.clearListBtn {
+  margin-top: 0;
+  width: 100%;
+  height: 9vh;
+  font-size: 20px;
+}
+
+#todoInputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.addList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid grey;
+}
+
+.addList input {
+  width: 80%;
+  border: none;
+  height: 5vh;
+  font-style: italic;
+}
+
+.checkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: baseline;
+  align-content: center;
+  color: black;
+  margin-top: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid grey;
+}
