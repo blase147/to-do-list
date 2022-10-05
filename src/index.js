@@ -14,21 +14,21 @@ function component() {
 document.body.appendChild(component());
 
 const taskData = [
-    {
-        description: 'wash the dishes',
-        completed: true,
-        index: 1,
-    },
-    {
-        description: 'complete To Do list project',
-        completed: true,
-        index: 2,
-    },
-    {
-        description: 'Attend family meeting',
-        completed: true,
-        index: 3,
-    }
+  {
+    description: 'wash the dishes',
+    completed: true,
+    index: 1,
+  },
+  {
+    description: 'complete To Do list project',
+    completed: true,
+    index: 2,
+  },
+  {
+    description: 'Attend family meeting',
+    completed: true,
+    index: 3,
+  },
 ];
 
 const todoList = document.getElementById('.todoList');
