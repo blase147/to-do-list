@@ -3,8 +3,7 @@
 All changes were successful as linters errors were all fixed. 
 
 ## TODO LIST PROJECT
-Here is a [link] (https://blase147.github.io/to-do-list/
-) to the live page.
+Here is a [link] (https://blase147.github.io/to-do-list/) to the live page.
 # Built With
 
 --Major languages 
@@ -22,7 +21,7 @@ Here is a [link] (https://blase147.github.io/to-do-list/
 
 To get a local copy up and running follow these simple example steps.
 
-$ git clone https://github.com/blase147/to-do-list
+$ git clone https://github.com/blase147/to-do-list.git
 
 $ git checkout -b todolist-project
 
