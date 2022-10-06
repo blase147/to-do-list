@@ -1,4 +1,5 @@
 import './style.css';
+
 const todoList = document.getElementById('todoList');
 
 const taskData = [
