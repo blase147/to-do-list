@@ -1,0 +1,106 @@
+body {
+  /* background-color: red; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+#todoContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid grey;
+  gap: 30px;
+  align-items: center;
+  align-content: flex-start;
+  padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header {
+  width: 90%;
+}
+
+.clearListBtnContainer {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 224, 224);
+  width: 100%;
+  margin: auto;
+}
+
+.clearListBtn {
+  font-size: 20px;
+  margin: 20px;
+}
+
+#todoInputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.addList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid grey;
+}
+
+.addList input {
+  width: 80%;
+  border: none;
+  height: 5vh;
+  font-style: italic;
+}
+
+.checkContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  color: black;
+  margin-top: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid grey;
+  gap: 370px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+/* .btnContainer {
+  display: flex;
+  margin-right: 20px;
+} */
+
+.btnDelete {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background: none;
+}
+
+button {
+  display: flex;
+  border: none;
+  background: none;
+}
