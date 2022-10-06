@@ -18,22 +18,31 @@ body {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid grey;
-
-  /* justify-content: space-around; */
-  gap: 100px;
+  gap: 30px;
   align-items: center;
   align-content: flex-start;
-  padding-right: 10px;
   padding-left: 10px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.clearListBtn {
-  margin-top: 0;
+.header {
+  width: 90%;
+}
+
+.clearListBtnContainer {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 224, 224);
   width: 100%;
-  height: 9vh;
+  margin: auto;
+}
+
+.clearListBtn {
   font-size: 20px;
+  margin: 20px;
 }
 
 #todoInputs {
@@ -62,13 +71,36 @@ body {
 
 .checkContainer {
   display: flex;
-  flex-direction: column;
-  justify-items: center;
+  flex-direction: row;
   align-items: baseline;
-  align-content: center;
   color: black;
   margin-top: 0;
   padding-top: 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid grey;
+  gap: 370px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.btnContainer {
+  display: flex;
+  margin-right: 20px;
+}
+
+.btnDelete {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background: none;
+}
+
+button {
+  display: flex;
+  border: none;
+  background: none;
 }

@@ -1,17 +1,22 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 import './style.css';
-// import data from 'taskData.js';
 
-function component() {
-  const element = document.createElement('div');
+// function component() {
+//   const element = document.createElement('div');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-  return element;
-}
+//   // Lodash, now imported by this script
+//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+//   element.classList.add('hello');
+//   return element;
+// }
 
-document.body.appendChild(component());
+// document.body.appendChild(component());
+
+const todoList = document.getElementById('todoList');
+// window.addEventListener('load', () => {
+//     todoList.style.display= "block";
+//     }
+// );
 
 const taskData = [
   {
@@ -20,7 +25,7 @@ const taskData = [
     index: 1,
   },
   {
-    description: 'complete To Do list project',
+    description: '  Complete To Do list project',
     completed: true,
     index: 2,
   },
@@ -31,20 +36,20 @@ const taskData = [
   },
 ];
 
-const todoList = document.getElementById('.todoList');
+let list = '';
+taskData.forEach((data) => {
+  list += `
 
-taskData.forEach((taskData) => {
-  const {
-    description, completed, index,
-  } = taskData;
 
-  const list = document.createElement('div');
-  list.innerHTML += `
-            <div class="checkContainer">
-            <label for="checkbox"><input type="checkbox">${description}</label>
-            <p>${completed}</p>
-            <p>${index}</p>
-            <i class="fa-solid fa-ellipsis-vertical"></i>    
-        </div>`;
-  todoList.appendChild(list);
+  <div id="${data.index}" class="checkContainer">
+  <div class="inputContainer">
+      <input id="checkBox" type="checkbox"  required ${data.index}>
+      <p id="label">${data.description}</p>
+  </div>
+  <div class="btnContainer">
+      <button class="btnDelete">&#65049</button>    
+  </div>
+</div>
+`;
 });
+todoList.innerHTML = list;
