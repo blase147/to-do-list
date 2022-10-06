@@ -27,7 +27,7 @@ taskData.forEach((data) => {
 
   <div id="${data.index}" class="checkContainer">
   <div class="inputContainer">
-      <input id="checkBox" type="checkbox"  required ${data.index}>
+      <input id="checkBox" type="checkbox"  required>
       <p id="label">${data.description}</p>
   </div>
   <div class="btnContainer">
