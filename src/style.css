@@ -87,10 +87,10 @@ body {
   align-items: baseline;
 }
 
-.btnContainer {
+/* .btnContainer {
   display: flex;
   margin-right: 20px;
-}
+} */
 
 .btnDelete {
   display: flex;
