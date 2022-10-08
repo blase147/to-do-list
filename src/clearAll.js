@@ -1,4 +1,4 @@
-// import { displayTask } from './addRemove.js';
+import { displayTask } from './AddRemove.js';
 
 const todos = JSON.parse(localStorage.getItem('todos'));
 const clearList = (e) => {
