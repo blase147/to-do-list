@@ -1,4 +1,6 @@
 import './style.css';
+import editList from './editList.js';
+import clearList from './clearAll.js';
 
 const todoList = document.getElementById('todoList');
 const addListForm = document.querySelector('#form1');
@@ -67,29 +69,7 @@ todoList.addEventListener('click', (e) => {
   }
 });
 
-// update task
-const editList = (e) => {
-  const clicked = e.target.closest('#label');
-  if (!clicked) return;
-  clicked.addEventListener('keyup', () => {
-    const taskList = JSON.parse(localStorage.getItem('todos')) || [];
-    const targetList = parseInt(clicked.getAttribute('data-desc'), 10);
-    const update = taskList.find((todo) => todo.index === targetList);
-    update.description = clicked.value.trim();
-    localStorage.setItem('todos', JSON.stringify(taskList));
-  });
-};
 todoList.addEventListener('click', editList);
-
-const clearList = (e) => {
-  const clicked = e.target.closest('#checkBox');
-  if (!clicked) return;
-  const targetList = parseInt(clicked.getAttribute('data-check'), 10);
-  const taskList = JSON.parse(localStorage.getItem('todos')) || [];
-  const update = taskList.find((todo) => todo.index === targetList);
-  update.completed = !update.completed;
-  localStorage.setItem('todos', JSON.stringify(taskList));
-};
 
 const clearListBtn = document.querySelector('.clearListBtn');
 clearListBtn.addEventListener('click', () => {

@@ -1,9 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-All changes were successful as linters errors were all fixed. 
 
-## TODO LIST PROJECT
-Here is a [link] (https://blase147.github.io/to-do-list/dist/index.html) to the live page.
 # Built With
 
 --Major languages 
