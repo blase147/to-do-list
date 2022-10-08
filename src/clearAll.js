@@ -1,5 +1,6 @@
-import { displayTask } from "./addRemove.js";
+// import { displayTask } from './addRemove.js';
 
+const todos = JSON.parse(localStorage.getItem('todos'));
 const clearList = (e) => {
   const clicked = e.target.closest('#checkBox');
   if (!clicked) return;
@@ -10,7 +11,7 @@ const clearList = (e) => {
   localStorage.setItem('todos', JSON.stringify(taskList));
 };
 // update task
-export const clear  = () => {
+export const clear = () => {
   const clearAll = JSON.parse(localStorage.getItem('todos')) || [];
   const notCompleted = clearAll.filter((todo) => !todo.completed);
   todos.length = 0;
@@ -23,6 +24,5 @@ export const clear  = () => {
   localStorage.setItem('todos', JSON.stringify(todos));
   displayTask();
 };
-
 
 export default clearList;
