@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Wbpack Exercise</title>
 </head>
@@ -11,17 +12,24 @@
         <div class="headerContainer">
             <h1 class="header">Today's To Do</h1>
             <div class="btnContainer">
-                <button class="refreshBtn">&#8634</button>
+                <button class="refreshBtn">
+                    <i class="fa fa-refresh"></i>    
+                </button>
             </div>
         </div>
 
         <div class="addList">
-            <input type="text" placeholder="Add to your list..." required>
-            <button type="submit" class="addListBtn">&#10550</button>
+            <form id="form1" class="addList"  action="">
+                <input id="textInput" type="text" placeholder="Add to your list..." required>
+                <button  type="submit" class="addListBtn">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </form>
         </div>
         <div id="todoList">
 
         </div>
+        
         <div class="clearListBtnContainer">
             <button class="clearListBtn" type="button">Clear all completed</button>
         </div>
