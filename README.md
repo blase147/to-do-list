@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
---Project Description
+# Project Description
 - This is a todo list App (A Microverse project)
 
 ## TODO LIST PROJECT
