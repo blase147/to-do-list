@@ -1,7 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Description
-- This is a todo list App (A Microverse project)
+- This is a todo list app that allows a user to add and remove a list of tasks to be done. 
+ It also has a feature for clearing all tasks from the the task library as well as from the local storage.
 
 ## TODO LIST PROJECT
 Here is a [link] (https://blase147.github.io/to-do-list/dist/index.html) to the live page.
